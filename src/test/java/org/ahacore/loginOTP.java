@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 public class loginOTP extends mainTest {
+    // Testing
         @Test
-
         public void login() throws InterruptedException {
             driver.findElement(By.id("com.android.permissioncontroller:id/permission_allow_button")).click();
             Thread.sleep(5000);
