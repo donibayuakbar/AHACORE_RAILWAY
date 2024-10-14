@@ -3,7 +3,7 @@
 <suite name= "Suite">
     <test name="LoginOTP">
         <classes>
-            <class name="org.ahacore.loginOTP"/>
+            <class name="org.ahacore.CheckOutPartial"/>
         </classes>
     </test>
 </suite>
