@@ -17,7 +17,7 @@ public class mainTest {
         options.setDeviceName("DoniPhone");
         options.setAutomationName("UiAutomator2");
         options.setPlatformVersion("14.0");
-        options.setApp("/Users/ahadev1/Documents/Aha_Core_Railways/src/test/java/resource/preprod.apk");
+        options.setApp("/Users/ahadev1/Documents/Aha_Core_Railways/src/test/java/resource/app preproduction.apk");
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), options);
         Thread.sleep(5000);
     }
