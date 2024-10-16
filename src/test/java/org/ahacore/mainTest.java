@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -15,7 +16,7 @@ public class mainTest {
     @BeforeClass
     public void ConfigureAppium() throws MalformedURLException, InterruptedException {
         UiAutomator2Options options = new UiAutomator2Options();
-        options.setDeviceName("DoniPhone");
+        options.setDeviceName("DoniDevice");
         options.setAutomationName("UiAutomator2");
         options.setPlatformVersion("14.0");
         options.setApp("/Users/ahadev1/Documents/Aha_Core_Railways/src/test/java/resource/app preproduction.apk");
@@ -48,7 +49,7 @@ public class mainTest {
         Thread.sleep(4000);
     }
     /*@AfterClass
-    public void penutupan() {
+    public void penutupan () {
         driver.quit();
     }*/
 }

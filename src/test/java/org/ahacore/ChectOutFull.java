@@ -10,7 +10,7 @@ public class ChectOutFull extends mainTest {
     public void full () throws InterruptedException {
         try {
             // Produk Pertama
-            Thread.sleep(1000);
+            Thread.sleep(2000);
             driver.findElement(By.id("com.id.aha.app.preproduction:id/btn_ok")).click();
             Thread.sleep(2000);
             driver.findElement(By.id("com.id.aha.app.preproduction:id/btn_ok")).click();

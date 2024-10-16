@@ -10,7 +10,7 @@ public class CheckOutPartial extends mainTest {
     public void partial () throws InterruptedException {
         try {
             // Produk Pertama
-            Thread.sleep(1000);
+            Thread.sleep(2000);
             driver.findElement(By.id("com.id.aha.app.preproduction:id/btn_ok")).click();
             Thread.sleep(2000);
             driver.findElement(By.id("com.id.aha.app.preproduction:id/btn_ok")).click();
@@ -64,8 +64,6 @@ public class CheckOutPartial extends mainTest {
             driver.findElement(By.id("com.id.aha.app.preproduction:id/payment_method_btn_pay")).click();
             Thread.sleep(2000);
             driver.findElement(By.id("com.id.aha.app.preproduction:id/ahacash_success_btn_ok")).click();
-            Thread.sleep(2000);
-            driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"Kembali ke atas\"]")).click();
             Thread.sleep(2000);
 
         }catch (Exception e){
