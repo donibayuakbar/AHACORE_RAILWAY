@@ -50,19 +50,19 @@ public class ChectOutFull extends mainTest {
             driver.findElement(By.id("com.id.aha.app.preproduction:id/cartFragment")).click();
             Thread.sleep(2000);
             driver.findElement(By.id("com.id.aha.app.preproduction:id/cart_btn_pay")).click();
-            Thread.sleep(2000);
+            Thread.sleep(3000);
             driver.findElement(By.id("com.id.aha.app.preproduction:id/item_ara_cb")).click();
-            Thread.sleep(2000);
+            Thread.sleep(3000);
             driver.findElement(By.id("com.id.aha.app.preproduction:id/purchase_detail_btn_next")).click();
-            Thread.sleep(2000);
+            Thread.sleep(3000);
             driver.findElement(By.id("com.id.aha.app.preproduction:id/payment_method_cod_cb_choice")).click();
-            Thread.sleep(2000);
+            Thread.sleep(3000);
             driver.findElement(By.id("com.id.aha.app.preproduction:id/payment_method_btn_pay")).click();
-            Thread.sleep(2000);
+            Thread.sleep(3000);
             driver.findElement(By.id("com.id.aha.app.preproduction:id/ahacash_success_btn_ok")).click();
-            Thread.sleep(2000);
+            Thread.sleep(3000);
             driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"Kembali ke atas\"]")).click();
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         }catch (Exception e){
             e.printStackTrace();
         }

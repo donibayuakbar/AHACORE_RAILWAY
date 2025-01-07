@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name= "Suite">
-    <test name="mainTest">
+    <test name="ChectOutFull">
         <classes>
-            <class name="org.ahacore.mainTest"/>
+            <class name="org.ahacore.ChectOutFull"/>
+        </classes>
+    </test>
+
+    <test name="CheckOutPartial">
+        <classes>
+            <class name="org.ahacore.CheckOutPartial"/>
+        </classes>
+    </test>
+
+    <test name="CheckOutUncheklistAll">
+        <classes>
+            <class name="org.ahacore.CheckOutUnchecklistAll"/>
         </classes>
     </test>
 </suite>
