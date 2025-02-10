@@ -48,8 +48,8 @@ public class mainTest {
         driver.findElement(By.id("com.id.aha.app.preproduction:id/otp_pin_edt")).sendKeys("123456");
         Thread.sleep(4000);
     }
-    /*@AfterClass
+    @AfterClass
     public void penutupan () {
         driver.quit();
-    }*/
+    }
 }

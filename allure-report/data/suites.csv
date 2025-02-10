@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","42276","full","Suite","Wed Jan 08 11:52:37 WIB 2025","passed","Wed Jan 08 11:53:19 WIB 2025","org.ahacore.ChectOutFull","ChectOutFull","org.ahacore.ChectOutFull","full"
+"","41752","partial","Suite","Wed Jan 08 11:54:10 WIB 2025","passed","Wed Jan 08 11:54:51 WIB 2025","org.ahacore.CheckOutPartial","CheckOutPartial","org.ahacore.CheckOutPartial","partial"
+"","42239","unchecklist","Suite","Wed Jan 08 11:55:37 WIB 2025","passed","Wed Jan 08 11:56:20 WIB 2025","org.ahacore.CheckOutUnchecklistAll","CheckOutUncheklistAll","org.ahacore.CheckOutUnchecklistAll","unchecklist"

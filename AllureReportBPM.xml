@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name= "Suite">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+    <test name="Filter">
+        <classes>
+            <class name="org.BPM.Filter"/>
+        </classes>
+    </test>
+
+    <test name="CariToko">
+        <classes>
+            <class name="org.BPM.CariToko"/>
+        </classes>
+    </test>
+
+    <test name="CekRute">
+        <classes>
+            <class name="org.BPM.CekRute"/>
+        </classes>
+    </test>
+
+    <test name="HubungCS">
+        <classes>
+            <class name="org.BPM.HubungiCS"/>
+        </classes>
+    </test>
+
+    <test name="UnregisteredOutlet">
+        <classes>
+            <class name="org.BPM.TambahUnregisteredOutlet"/>
+        </classes>
+    </test>
+
+    <test name="MapKunjungan">
+        <classes>
+            <class name="org.BPM.MapKunjungan"/>
+        </classes>
+    </test>
+
+    <test name="HistoryKunjungan">
+        <classes>
+            <class name="org.BPM.HistoryKunjungan"/>
+        </classes>
+    </test>
+</suite>
