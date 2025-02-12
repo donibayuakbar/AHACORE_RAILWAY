@@ -6,43 +6,49 @@
     </listeners>
     <test name="Filter">
         <classes>
-            <class name="org.BPM.Filter"/>
+            <class name="BPM.Filter"/>
         </classes>
     </test>
 
     <test name="CariToko">
         <classes>
-            <class name="org.BPM.CariToko"/>
+            <class name="BPM.CariToko"/>
         </classes>
     </test>
 
     <test name="CekRute">
         <classes>
-            <class name="org.BPM.CekRute"/>
+            <class name="BPM.CekRute"/>
         </classes>
     </test>
 
     <test name="HubungCS">
         <classes>
-            <class name="org.BPM.HubungiCS"/>
+            <class name="BPM.HubungiCS"/>
         </classes>
     </test>
 
     <test name="UnregisteredOutlet">
         <classes>
-            <class name="org.BPM.TambahUnregisteredOutlet"/>
+            <class name="BPM.TambahUnregisteredOutlet"/>
         </classes>
     </test>
 
     <test name="MapKunjungan">
         <classes>
-            <class name="org.BPM.MapKunjungan"/>
+            <class name="BPM.MapKunjungan"/>
         </classes>
     </test>
 
     <test name="HistoryKunjungan">
         <classes>
-            <class name="org.BPM.HistoryKunjungan"/>
+            <class name="BPM.HistoryKunjungan"/>
+        </classes>
+    </test>
+    
+    <test name="Logout">
+        <classes>
+            <class name="BPM.Logout"></class>
         </classes>
     </test>
 </suite>

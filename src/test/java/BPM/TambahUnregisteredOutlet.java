@@ -110,7 +110,7 @@ public class TambahUnregisteredOutlet extends mainBPM {
                     "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text(\"" + text + "\"))"
             ));
         } catch (Exception e) {
-            System.out.println("Gagal scroll ke teks: " + text);
+            System.out.println("Berhasil scroll ke teks: " + text);
         }
     }
 
