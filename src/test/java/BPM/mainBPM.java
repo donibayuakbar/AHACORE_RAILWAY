@@ -21,7 +21,7 @@ public class mainBPM {
         options.setDeviceName("DoniDevice");
         options.setAutomationName("UiAutomator2");
         options.setPlatformVersion("14.0");
-        options.setApp("/Users/ahadev1/Documents/Aha_Core_Railways/src/test/java/resource/BPMdev.apk");
+        options.setApp("/Users/ahadev1/Documents/Aha_Core_Railways/src/test/java/resource/BPM18.apk");
 
 //        // Tambahan konfigurasi timeout
 //        options.setNewCommandTimeout(Duration.ofSeconds(60));

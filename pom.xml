@@ -130,6 +130,7 @@
             <configuration>
               <suiteXmlFiles>
                 <suiteXmlFile>AllureReportBPM.xml</suiteXmlFile>
+                <suiteXmlFile>AppiumAllureReport.xml</suiteXmlFile>
               </suiteXmlFiles>
               <encoding>UTF-8</encoding>
             </configuration>
