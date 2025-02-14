@@ -46,6 +46,18 @@
         </classes>
     </test>
     
+    <test name="Pending">
+        <classes>
+            <class name="BPM.Pending"></class>
+        </classes>
+    </test>
+    
+    <test name="KunjungiOutlet">
+        <classes>
+            <class name="BPM.kunjungiOutlet"></class>
+        </classes>
+    </test>
+
     <test name="Logout">
         <classes>
             <class name="BPM.Logout"></class>

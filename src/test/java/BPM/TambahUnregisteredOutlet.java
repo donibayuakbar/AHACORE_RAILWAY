@@ -17,6 +17,7 @@ public class TambahUnregisteredOutlet extends mainBPM {
     @Test
     public void UnregisteredOutlet() throws InterruptedException {
         try {
+            Thread.sleep(2000);
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
             Faker faker = new Faker();
 
@@ -46,14 +47,18 @@ public class TambahUnregisteredOutlet extends mainBPM {
             Thread.sleep(2000);
 
             // Cekrek Foto
-            WebElement cekrek = wait.until(ExpectedConditions.elementToBeClickable(By.id("com.android.camera2:id/shutter_button")));
-            cekrek.click();
+//            WebElement cekrek = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.FrameLayout[@resource-id=\"com.android.camera:id/bottom_popup_tips\"]")));
+//            cekrek.click();
+            WebElement cameraButton = wait.until(ExpectedConditions.elementToBeClickable(
+                    MobileBy.AndroidUIAutomator("new UiSelector().resourceId(\"com.android.camera:id/shutter_button\")")
+            ));
+            cameraButton.click();
             Thread.sleep(2000);
 
             // Foto berhasil
-            WebElement done = wait.until(ExpectedConditions.elementToBeClickable(By.id("com.android.camera2:id/done_button")));
+            WebElement done = wait.until(ExpectedConditions.elementToBeClickable(By.id("com.android.camera:id/done_button")));
             done.click();
-            Thread.sleep(2000);
+            Thread.sleep(3000);
 
             // Input Nama (Random)
             WebElement nama = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.ScrollView/android.view.View/android.widget.EditText[1]")));

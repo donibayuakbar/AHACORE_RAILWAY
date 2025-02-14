@@ -2,15 +2,20 @@ package BPM;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
+
+import java.time.Duration;
 
 public class Pending extends mainBPM {
 
     @Test
     public void pending () throws InterruptedException {
         try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
             // Klik kunjungi outlet
-            WebElement kunjungi = driver.findElement(By.xpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[4]/android.view.View[2]/android.view.View[3]/android.widget.Button"));
+            WebElement kunjungi = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[4]/android.view.View[2]/android.view.View[3]/android.widget.Button")));
             kunjungi.click();
             Thread.sleep(2000);
 
