@@ -295,10 +295,10 @@ public class kunjungiOutlet extends mainBPM {
             selesai.click();
             Thread.sleep(2000);
 
-//            // klik submit
-//            WebElement submit = driver.findElement(By.xpath("//android.widget.Button"));
-//            submit.click();
-//            Thread.sleep(4000);
+            // klik submit
+            WebElement submit = driver.findElement(By.xpath("//android.widget.Button"));
+            submit.click();
+            Thread.sleep(7000);
 
         } catch (Exception e) {
             System.out.println("❌ Terjadi kesalahan dalam proses kunjungi outlet.");

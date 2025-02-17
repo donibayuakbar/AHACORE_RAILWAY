@@ -4,9 +4,9 @@
     <listeners>
         <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
     </listeners>
-    <test name="Filter">
+    <test name="KunjungiOutlet">
         <classes>
-            <class name="BPM.Filter"/>
+            <class name="BPM.kunjungiOutlet"/>
         </classes>
     </test>
 
@@ -22,9 +22,9 @@
         </classes>
     </test>
 
-    <test name="HubungCS">
+    <test name="Filter">
         <classes>
-            <class name="BPM.HubungiCS"/>
+            <class name="BPM.Filter"/>
         </classes>
     </test>
 
