@@ -10,7 +10,7 @@ public class HistoryKunjungan extends mainBPM {
     public void historyKunjunganFilter () throws InterruptedException {
         try {
             // Klik Tambah
-            Thread.sleep(2000);
+            Thread.sleep(5000);
             WebElement tambah = driver.findElement(By.xpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[5]/android.widget.Button"));
             tambah.click();
             Thread.sleep(2000);

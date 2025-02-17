@@ -10,6 +10,7 @@ public class HubungiCS extends mainBPM{
     public void CS () throws InterruptedException {
         try {
             // Klik Tambah
+            Thread.sleep(5000);
             WebElement tambah = driver.findElement(By.xpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[5]/android.widget.Button"));
             tambah.click();
             Thread.sleep(2000);

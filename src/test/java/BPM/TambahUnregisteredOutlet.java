@@ -47,8 +47,6 @@ public class TambahUnregisteredOutlet extends mainBPM {
             Thread.sleep(2000);
 
             // Cekrek Foto
-//            WebElement cekrek = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.FrameLayout[@resource-id=\"com.android.camera:id/bottom_popup_tips\"]")));
-//            cekrek.click();
             WebElement cameraButton = wait.until(ExpectedConditions.elementToBeClickable(
                     MobileBy.AndroidUIAutomator("new UiSelector().resourceId(\"com.android.camera:id/shutter_button\")")
             ));
@@ -101,7 +99,7 @@ public class TambahUnregisteredOutlet extends mainBPM {
             // Klik Submit
             WebElement submit = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.TextView[@text=\"Submit\"]")));
             submit.click();
-            Thread.sleep(4000);
+            Thread.sleep(5000);
 
         } catch (Exception e) {
             e.printStackTrace();

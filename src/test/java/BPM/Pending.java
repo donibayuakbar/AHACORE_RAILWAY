@@ -15,7 +15,7 @@ public class Pending extends mainBPM {
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
             // Klik kunjungi outlet
-            WebElement kunjungi = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[4]/android.view.View[2]/android.view.View[3]/android.widget.Button")));
+            WebElement kunjungi = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//android.widget.TextView[@text=\"Kunjungi Outlet\"])[2]")));
             kunjungi.click();
             Thread.sleep(2000);
 

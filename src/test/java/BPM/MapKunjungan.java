@@ -9,6 +9,7 @@ public class MapKunjungan extends mainBPM {
     @Test
     public void MapKunjungan () throws InterruptedException {
         try {
+            Thread.sleep(5000);
             // Klik Tambah
             WebElement tambah = driver.findElement(By.xpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[5]/android.widget.Button"));
             tambah.click();
@@ -22,7 +23,7 @@ public class MapKunjungan extends mainBPM {
             // Klik tampilkan status kunjungan pada map
             WebElement status = driver.findElement(By.xpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[2]"));
             status.click();
-            Thread.sleep(2000);
+            Thread.sleep(10000);
 
         }catch (Exception e){
             e.printStackTrace();
