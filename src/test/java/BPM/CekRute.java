@@ -9,6 +9,7 @@ public class CekRute extends mainBPM {
     @Test
     public void rute () throws InterruptedException {
         try {
+            Thread.sleep(5000);
             // Klik maps
             WebElement rute = driver.findElement(By.xpath("(//android.widget.TextView[@text=\"Google Map\"])[1]"));
             rute.click();

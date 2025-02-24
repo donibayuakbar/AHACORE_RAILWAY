@@ -17,7 +17,7 @@ public class TambahUnregisteredOutlet extends mainBPM {
     @Test
     public void UnregisteredOutlet() throws InterruptedException {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(5000);
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
             Faker faker = new Faker();
 
@@ -27,7 +27,7 @@ public class TambahUnregisteredOutlet extends mainBPM {
             String randomAddress = faker.address().fullAddress();
 
             // Klik Tambah
-            WebElement tambah = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[5]/android.widget.Button")));
+            WebElement tambah = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@content-desc=\"Open menu\"]")));
             tambah.click();
             Thread.sleep(2000);
 
@@ -39,7 +39,7 @@ public class TambahUnregisteredOutlet extends mainBPM {
             // Ambil foto
             WebElement ambilFoto = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.TextView[@text=\"Ambil Foto\"]")));
             ambilFoto.click();
-            Thread.sleep(2000);
+            Thread.sleep(4000);
 
             // Perijinan Kamera
             WebElement allow = wait.until(ExpectedConditions.elementToBeClickable(By.id("com.android.permissioncontroller:id/permission_allow_foreground_only_button")));
@@ -51,12 +51,12 @@ public class TambahUnregisteredOutlet extends mainBPM {
                     MobileBy.AndroidUIAutomator("new UiSelector().resourceId(\"com.android.camera:id/shutter_button\")")
             ));
             cameraButton.click();
-            Thread.sleep(2000);
+            Thread.sleep(4000);
 
             // Foto berhasil
             WebElement done = wait.until(ExpectedConditions.elementToBeClickable(By.id("com.android.camera:id/done_button")));
             done.click();
-            Thread.sleep(3000);
+            Thread.sleep(2000);
 
             // Input Nama (Random)
             WebElement nama = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.ScrollView/android.view.View/android.widget.EditText[1]")));
@@ -147,6 +147,6 @@ public class TambahUnregisteredOutlet extends mainBPM {
     // Fungsi untuk generate nomor HP random dengan format Indonesia
     public String generateRandomPhoneNumber() {
         Faker faker = new Faker();
-        return "08" + faker.number().digits(9); // Nomor HP Indonesia dimulai dari "08" + 9 digit angka random
+        return "8" + faker.number().digits(11); // Nomor HP Indonesia dimulai dari "08" + 9 digit angka random
     }
 }

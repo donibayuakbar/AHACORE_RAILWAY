@@ -4,12 +4,6 @@
     <listeners>
         <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
     </listeners>
-    <test name="KunjungiOutlet">
-        <classes>
-            <class name="BPM.kunjungiOutlet"/>
-        </classes>
-    </test>
-
     <test name="CariToko">
         <classes>
             <class name="BPM.CariToko"/>
@@ -28,9 +22,9 @@
         </classes>
     </test>
 
-    <test name="UnregisteredOutlet">
+    <test name="HistoryKunjungan">
         <classes>
-            <class name="BPM.TambahUnregisteredOutlet"/>
+            <class name="BPM.HistoryKunjungan"/>
         </classes>
     </test>
 
@@ -40,21 +34,39 @@
         </classes>
     </test>
 
-    <test name="HistoryKunjungan">
+    <test name="UnregisteredOutlet">
         <classes>
-            <class name="BPM.HistoryKunjungan"/>
+            <class name="BPM.TambahUnregisteredOutlet"/>
         </classes>
     </test>
-    
+
+    <test name="Hubungi CS">
+        <classes>
+            <class name="BPM.HubungiCS"></class>
+        </classes>
+    </test>
+
+    <test name="KunjungiOutlet">
+        <classes>
+            <class name="BPM.kunjungiOutlet"/>
+        </classes>
+    </test>
+
     <test name="Pending">
         <classes>
             <class name="BPM.Pending"></class>
         </classes>
     </test>
     
-    <test name="KunjungiOutlet">
+    <test name="TokoTutup">
         <classes>
-            <class name="BPM.kunjungiOutlet"></class>
+            <class name="BPM.TokoTutup"></class>
+        </classes>
+    </test>
+
+    <test name="FinishVisit">
+        <classes>
+            <class name="BPM.finishVisit"></class>
         </classes>
     </test>
 

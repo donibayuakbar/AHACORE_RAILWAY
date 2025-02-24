@@ -11,7 +11,7 @@ public class MapKunjungan extends mainBPM {
         try {
             Thread.sleep(5000);
             // Klik Tambah
-            WebElement tambah = driver.findElement(By.xpath("//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View[5]/android.widget.Button"));
+            WebElement tambah = driver.findElement(By.xpath("//android.view.View[@content-desc=\"Open menu\"]"));
             tambah.click();
             Thread.sleep(2000);
 
